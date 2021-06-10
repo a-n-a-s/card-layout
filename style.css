@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #313638;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-container{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 90vw;
+    
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+    
+
+}
+.flex-items{
+    margin: 5vh auto;
+    width: 25vw;
+    height: 60vh;
+    background-color: #f5f5f5;
+    border: 2px solid #313638;
+    border-radius:2% ;
+}
+.flex-items img{
+    width: 25vw;
+
+}
+.flex-items h2 , .flex-items p{
+    text-align: center;
+    font-size: 1em;
+}
+.flex-items p{
+    margin: 2vh 0;
+}
+.flex-items button{
+    color: #f5f5f5;
+    background-color: #ff2079;
+    border: none;
+    margin: 8% 35%;
+    text-align: center;
+    font-size: 1em;
+    width: 30%;
+    height: 2rem;
+}
+
+.flex-items button:hover{
+    
+    background-color: #f5f5f5;
+    color: #ff2079;
+    border: 2px solid black;
+}
+@media screen and (max-width:767px ){
+    .flex-container{
+        flex-flow: column wrap;
+    }
+    .flex-items{
+        width: 80vw;
+        height: 65vh;
+    }
+    .flex-items img{
+        width: 80vw;
+    
+    }
+    .flex-items button{
+        margin: 0 25vw;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width :768px) and (max-width : 1024px){
+    .flex-items{
+        height: 40vh;
+    }
+    .flex-items button{
+        margin: 0 2vw;
+        width: 80%;
+    }
+}
